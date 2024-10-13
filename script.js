@@ -21,7 +21,19 @@
 
 //document.getElementById('test').innerHTML = 'Hola Mundo desde JavaScript'
 //document.getElementById('test').style.color = 'red'
-document.getElementById('test').setAttribute('class', 'colorado')
+//document.getElementById('test').setAttribute('class', 'colorado')
 // console.log(document.getElementById('test'))
 // console.log(document.getElementsByClassName('test'))
 // console.log(document.getElementsByTagName('p'))
+
+// const salutations = document.querySelectorAll('p.saludo')
+
+// document.getElementById('test').innerHTML = 'En este párrafo vamos a estar escribiendo el primero de los saludos, el cual es: ' + salutations[0].innerHTML
+
+const form = document.forms['form1'];
+let text = '';
+for (let i = 0; i < form.length; i++) {
+    text += form.elements[i].value + '<br>';    
+}
+
+document.getElementById('test').innerHTML = text;
