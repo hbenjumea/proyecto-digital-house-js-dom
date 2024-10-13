@@ -1,0 +1,42 @@
+console.l
+undefined
+console.log(array)
+VM272:1 (4) ['HTML', 'CSS', 'JavaScript', 'ReactJS']
+undefined
+console.log(object)
+VM362:1 {nombre: 'Hugo Andres', ocupacion: 'Desarrollador', materia: 'JavaScript para DOM'}
+undefined
+console.log(arrayObject)
+VM500:1 Uncaught ReferenceError: arrayObject is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM500:1
+console.log(objectArray)
+VM612:1 (4) [{…}, {…}, {…}, {…}]0: {materia: 'HTML', dificultad: 6, necesario: true}1: {materia: 'CSS', dificultad: 8, necesario: true}2: {materia: 'JavaScript', dificultad: 9.5, necesario: false}3: {materia: 'ReactJS', dificultad: 8, necesario: false}length: 4[[Prototype]]: Array(0)
+undefined
+let text = ''
+undefined
+for (let tech of array) {
+    text += tech + ', ';
+}
+'HTML, CSS, JavaScript, ReactJS, '
+text = ''
+''
+for ( let x in object ) {
+}
+undefined
+for (let x in object) {
+    text += object[x] + ', ';
+}
+'Hugo Andres, Desarrollador, JavaScript para DOM, '
+for ( let x in object) {}
+undefined
+for ( let x in object) {
+    text += x + ', ';
+}
+'Hugo Andres, Desarrollador, JavaScript para DOM, nombre, ocupacion, materia, '
+text = ''
+''
+for (let x of objectArray) {
+    text += x.materia + ', ';
+}
+'HTML, CSS, JavaScript, ReactJS, '
