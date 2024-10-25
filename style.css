@@ -5,9 +5,14 @@
     background-color: red;
 } */
 
-#p2{
+/* #p2{
     color: red;
 }
 #p3{
     color: blue;
+} */
+
+.red-background{
+    background-color: red;
+    border: 1px solid black;
 }
