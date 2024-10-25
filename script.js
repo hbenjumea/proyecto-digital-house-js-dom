@@ -66,6 +66,19 @@
 // const mouseOut = element => {
 //     element.innerHTML = 'Estás fuera del div'
 // }
-const changeStyle = element => {
-    element.style.background = 'aqua'
+// const changeStyle = element => {
+//     element.style.background = 'aqua'
+// }
+
+let key
+
+// const keydown = ($event) => {
+//     key = $event.altKey
+//     console.log(key)
+//     document.getElementById('alt').innerHTML = key ? 'Tocando ALT' : 'No tocando ALT'
+// }
+const keydown = ($event) => {
+    key = $event.getModifierState('CapsLock')
+    console.log(key)
+    
 }

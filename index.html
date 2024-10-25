@@ -10,7 +10,7 @@
 </head>
 <!-- <body onload="checkCookies()"> -->
 <body >
-    <h1>Eventos</h1>
+    <h1>Eventos de teclado</h1>
 
     <!-- <p>Vamos a estar trabajando sobre la selección de párrafos</p>
 
@@ -47,7 +47,9 @@
         Ponte arriba con el mouse
      </div> -->
 
-     <input type="text" onfocus="changeStyle(this)">
+     <input type="text" id="input" onkeydown="keydown(event)">
+
+     <p id="alt"></p>
      
 
     <!-- Acá incorporamos JavaScript -->
