@@ -134,6 +134,25 @@
 // console.log(color)
 // console.log(background)
 
-const container = document.getElementById('div')
-container.querySelector('p.style').innerHTML = 'Texto desde JavaScript'
-container.querySelector('p.style').style.color = 'blue'
+// const container = document.getElementById('div')
+// container.querySelector('p.style').innerHTML = 'Texto desde JavaScript'
+// container.querySelector('p.style').style.color = 'blue'
+
+// console.log(window)
+const clickMe = () => {
+    // const height = window.innerHeight
+    // const width = window.innerWidth
+
+    // console.log('height: ', height, 'width: ', width)
+    // open('https://www.digitalhouse.com/ar', 'Digital House')
+    document.getElementById('screenh').innerHTML = screen.height + 'px'
+    document.getElementById('screenw').innerHTML = screen.width + 'px'
+    document.getElementById('screenc').innerHTML = screen.colorDepth + 'bits'
+    document.getElementById('url').innerHTML = location.href
+    document.getElementById('cookies').innerHTML = navigator.cookieEnabled ? 'Si' : 'No'
+    
+}
+const historyBack = () => history.back()
+const historyForward = () => history.forward()
+document.getElementById('btn1').addEventListener('click', historyBack)
+document.getElementById('btn2').addEventListener('click', historyForward)
