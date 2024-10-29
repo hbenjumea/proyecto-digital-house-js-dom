@@ -122,6 +122,18 @@
 // let text = p1.getAttribute('class')
 // document.getElementById('atribute').innerHTML = text
 
-const input = document.getElementById('input')
-// input.setAttribute('value', 'Hugo Code')
-input.removeAttribute('value')
+// const input = document.getElementById('input')
+// // input.setAttribute('value', 'Hugo Code')
+// input.removeAttribute('value')
+
+// document.getElementById('styles').style.color= 'red'
+// document.getElementById('styles').style.backgroundColor= 'black'
+
+// const color = document.getElementById('styles').style.color
+// const background = document.getElementById('styles').style.backgroundColor
+// console.log(color)
+// console.log(background)
+
+const container = document.getElementById('div')
+container.querySelector('p.style').innerHTML = 'Texto desde JavaScript'
+container.querySelector('p.style').style.color = 'blue'
