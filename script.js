@@ -110,7 +110,18 @@
 // const removeClass = () => {
 //     document.getElementById('div1').classList.remove('red-background')    
 // }
- const toggleClass = () => {
-     document.getElementById('div1').classList.toggle('red-background')    
- }
+//  const toggleClass = () => {
+//      document.getElementById('div1').classList.toggle('red-background')    
+//  }
 
+// const p1 = document.getElementById('p1')
+// // const p2 = document.getElementById('p2')
+// p1.setAttribute('class', 'red-background') 
+
+// // let text = p1.getAttribute('class') ? p1.getAttribute('class') : p2.getAttribute('class') 
+// let text = p1.getAttribute('class')
+// document.getElementById('atribute').innerHTML = text
+
+const input = document.getElementById('input')
+// input.setAttribute('value', 'Hugo Code')
+input.removeAttribute('value')
