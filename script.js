@@ -139,20 +139,34 @@
 // container.querySelector('p.style').style.color = 'blue'
 
 // console.log(window)
-const clickMe = () => {
+//const clickMe = () => {
     // const height = window.innerHeight
     // const width = window.innerWidth
 
     // console.log('height: ', height, 'width: ', width)
     // open('https://www.digitalhouse.com/ar', 'Digital House')
-    document.getElementById('screenh').innerHTML = screen.height + 'px'
-    document.getElementById('screenw').innerHTML = screen.width + 'px'
-    document.getElementById('screenc').innerHTML = screen.colorDepth + 'bits'
-    document.getElementById('url').innerHTML = location.href
-    document.getElementById('cookies').innerHTML = navigator.cookieEnabled ? 'Si' : 'No'
+//     document.getElementById('screenh').innerHTML = screen.height + 'px'
+//     document.getElementById('screenw').innerHTML = screen.width + 'px'
+//     document.getElementById('screenc').innerHTML = screen.colorDepth + 'bits'
+//     document.getElementById('url').innerHTML = location.href
+//     document.getElementById('cookies').innerHTML = navigator.cookieEnabled ? 'Si' : 'No'
     
+// }
+// const historyBack = () => history.back()
+// const historyForward = () => history.forward()
+// document.getElementById('btn1').addEventListener('click', historyBack)
+// document.getElementById('btn2').addEventListener('click', historyForward)
+
+const geolocation = document.getElementById('ubicacion')
+
+const showPosition = position => {
+    geolocation.innerHTML = 'La latitud es: ' + position.coords.latitude + '<br>La longitud es: ' + position.coords.longitude
 }
-const historyBack = () => history.back()
-const historyForward = () => history.forward()
-document.getElementById('btn1').addEventListener('click', historyBack)
-document.getElementById('btn2').addEventListener('click', historyForward)
+
+const getLocation = () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition)
+    }else{
+        geolocation.innerHTML = 'La geolocalización está apagada o no es soportada por este navegador'
+    }
+}

@@ -10,7 +10,7 @@
 </head>
 <!-- <body onload="checkCookies()"> -->
 <body >
-    <h1>BOM (Browser Object Model): Window</h1>
+    <h1>Browser Web APIs: Geolocación</h1>
 
     <!-- <p>Vamos a estar trabajando sobre la selección de párrafos</p>
 
@@ -79,7 +79,7 @@
       <p class="style">Este parrafo va a tener estilos personalizados</p>
      </div> -->
      
-     <button id="btn" onclick="clickMe()">Hazme lick</button>
+     <!-- <button id="btn" onclick="clickMe()">Hazme lick</button>
      <button id="btn1" >Atras</button>
      <button id="btn2" >Adelante</button>
 
@@ -94,7 +94,11 @@
      <p>cookies habilitadas:</p>
      <p id="cookies"></p>
      <p>Navegador:</p>
-     <p id="nav"></p>
+     <p id="nav"></p> -->
+
+     <h4>Usted está ubicado en la siguiente ubicación:</h4>
+     <p id="ubicacion"></p>
+     <button onclick="getLocation()">Ver ubicación</button>
 
     <!-- Acá incorporamos JavaScript -->
     <script src="script.js"></script>
