@@ -10,7 +10,13 @@
 </head>
 <!-- <body onload="checkCookies()"> -->
 <body >
-    <h1>Browser Web APIs: Geolocación</h1>
+    <h1>Browser APIs: Form</h1>
+
+    <input id="number" type="number" min="50" max="100" required>
+    <button onclick="doValidation()">Es correcto el numero?</button>
+
+    <p>Si el numero es menor a 50 o mayor a 100, o nos olvidamos de ponerlo el error del navegador será:</p>
+    <p id="error"></p>
 
     <!-- <p>Vamos a estar trabajando sobre la selección de párrafos</p>
 
@@ -96,9 +102,9 @@
      <p>Navegador:</p>
      <p id="nav"></p> -->
 
-     <h4>Usted está ubicado en la siguiente ubicación:</h4>
+     <!-- <h4>Usted está ubicado en la siguiente ubicación:</h4>
      <p id="ubicacion"></p>
-     <button onclick="getLocation()">Ver ubicación</button>
+     <button onclick="getLocation()">Ver ubicación</button> -->
 
     <!-- Acá incorporamos JavaScript -->
     <script src="script.js"></script>

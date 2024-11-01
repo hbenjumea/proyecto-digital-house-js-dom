@@ -157,16 +157,27 @@
 // document.getElementById('btn1').addEventListener('click', historyBack)
 // document.getElementById('btn2').addEventListener('click', historyForward)
 
-const geolocation = document.getElementById('ubicacion')
+// const geolocation = document.getElementById('ubicacion')
 
-const showPosition = position => {
-    geolocation.innerHTML = 'La latitud es: ' + position.coords.latitude + '<br>La longitud es: ' + position.coords.longitude
-}
+// const showPosition = position => {
+//     geolocation.innerHTML = 'La latitud es: ' + position.coords.latitude + '<br>La longitud es: ' + position.coords.longitude
+// }
 
-const getLocation = () => {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition)
-    }else{
-        geolocation.innerHTML = 'La geolocalización está apagada o no es soportada por este navegador'
-    }
+// const getLocation = () => {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(showPosition)
+//     }else{
+//         geolocation.innerHTML = 'La geolocalización está apagada o no es soportada por este navegador'
+//     }
+// }
+
+const doValidation = () => {
+    const number = document.getElementById('number');
+    // if (!number.checkValidity()) {
+    //     document.getElementById('error').innerHTML = number.validationMessage
+    // }else{
+    //     document.getElementById('error').innerHTML = 'El número está correcto'
+    // }
+
+    document.getElementById('error').innerHTML = number.checkValidity() ? 'El número está correcto' : number.validationMessage
 }
