@@ -171,15 +171,20 @@
 //     }
 // }
 
-const doValidation = () => {
-    const name = document.getElementById('name');
-    // if (!number.checkValidity()) {
-    //     document.getElementById('error').innerHTML = number.validationMessage
-    // }else{
-    //     document.getElementById('error').innerHTML = 'El número está correcto'
-    // }
+// const doValidation = () => {
+//     const name = document.getElementById('name');
+//     // if (!number.checkValidity()) {
+//     //     document.getElementById('error').innerHTML = number.validationMessage
+//     // }else{
+//     //     document.getElementById('error').innerHTML = 'El número está correcto'
+//     // }
 
-    document.getElementById('error').innerHTML = name.checkValidity() 
-        ? 'El nombre está correcto' 
-        : 'El nombre es requerido, debes completar este campo'
-}
+//     document.getElementById('error').innerHTML = name.checkValidity() 
+//         ? 'El nombre está correcto' 
+//         : 'El nombre es requerido, debes completar este campo'
+// }
+
+const goBackx2 = () => window.history.go(-2) // Nos permite ir 2 veces hacia atrás
+const goBack = () => window.history.back() // Nos permite ir hacia atrás una sola vez
+const goForward = () => window.history.forward() // Nos permite ir hacia adelante una sola vez
+const goForwardx2 = () => window.history.go(2) // Nos permite ir 2 veces hacia adelante
