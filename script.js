@@ -184,7 +184,18 @@
 //         : 'El nombre es requerido, debes completar este campo'
 // }
 
-const goBackx2 = () => window.history.go(-2) // Nos permite ir 2 veces hacia atrás
-const goBack = () => window.history.back() // Nos permite ir hacia atrás una sola vez
-const goForward = () => window.history.forward() // Nos permite ir hacia adelante una sola vez
-const goForwardx2 = () => window.history.go(2) // Nos permite ir 2 veces hacia adelante
+// const goBackx2 = () => window.history.go(-2) // Nos permite ir 2 veces hacia atrás
+// const goBack = () => window.history.back() // Nos permite ir hacia atrás una sola vez
+// const goForward = () => window.history.forward() // Nos permite ir hacia adelante una sola vez
+// const goForwardx2 = () => window.history.go(2) // Nos permite ir 2 veces hacia adelante
+
+const firstname = document.getElementById('firstname')
+const lastname = document.getElementById('lastname')
+const job = document.getElementById('job')
+
+document.getElementById('welcome').innerHTML = localStorage.getItem('username') == null ? '' : localStorage.getItem('username')
+
+const save = () => {
+    localStorage.setItem('username', firstname.value + ' ' + lastname.value)
+    localStorage.setItem('job', job.value )
+}
