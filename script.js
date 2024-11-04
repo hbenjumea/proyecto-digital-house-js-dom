@@ -172,12 +172,14 @@
 // }
 
 const doValidation = () => {
-    const number = document.getElementById('number');
+    const name = document.getElementById('name');
     // if (!number.checkValidity()) {
     //     document.getElementById('error').innerHTML = number.validationMessage
     // }else{
     //     document.getElementById('error').innerHTML = 'El número está correcto'
     // }
 
-    document.getElementById('error').innerHTML = number.checkValidity() ? 'El número está correcto' : number.validationMessage
+    document.getElementById('error').innerHTML = name.checkValidity() 
+        ? 'El nombre está correcto' 
+        : 'El nombre es requerido, debes completar este campo'
 }
