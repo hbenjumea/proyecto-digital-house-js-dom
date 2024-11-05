@@ -193,9 +193,10 @@ const firstname = document.getElementById('firstname')
 const lastname = document.getElementById('lastname')
 const job = document.getElementById('job')
 
-document.getElementById('welcome').innerHTML = localStorage.getItem('username') == null ? '' : localStorage.getItem('username')
+document.getElementById('welcome').innerHTML = sessionStorage.getItem('username') == null ? '' : sessionStorage.getItem('username')
 
 const save = () => {
-    localStorage.setItem('username', firstname.value + ' ' + lastname.value)
-    localStorage.setItem('job', job.value )
+    sessionStorage.setItem('username', firstname.value + ' ' + lastname.value)
+    sessionStorage.setItem('job', job.value )
+    document.getElementById('welcome').innerHTML = sessionStorage.getItem('username') == null ? '' : sessionStorage.getItem('username')
 }
