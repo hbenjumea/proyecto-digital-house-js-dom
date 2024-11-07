@@ -255,9 +255,25 @@
 // }
 // console.timeEnd('Duración: ')
 
-const otherMethod = () => {
-    console.trace();
-} 
-const myFunction = () => {
-    otherMethod();
+// const otherMethod = () => {
+//     console.trace();
+// } 
+// const myFunction = () => {
+//     otherMethod();
+// }
+
+const action = () =>{
+    setTimeout(() => {
+        console.log('Acción del boton')
+    }, 2000);
+}
+const action2 = () =>{
+    const interval = setInterval(() => {
+        console.log('Acción del boton intervalo')        
+    }, 1000);
+    const timeout = setTimeout(() => {
+        console.log('limpiar intervalo')
+        clearInterval(interval)
+    }, 5000);
+    clearTimeout(timeout)
 }
