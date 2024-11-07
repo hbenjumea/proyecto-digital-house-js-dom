@@ -189,20 +189,75 @@
 // const goForward = () => window.history.forward() // Nos permite ir hacia adelante una sola vez
 // const goForwardx2 = () => window.history.go(2) // Nos permite ir 2 veces hacia adelante
 
-const firstname = document.getElementById('firstname')
-const lastname = document.getElementById('lastname')
-const job = document.getElementById('job')
+// const firstname = document.getElementById('firstname')
+// const lastname = document.getElementById('lastname')
+// const job = document.getElementById('job')
 
-document.getElementById('welcome').innerHTML = localStorage.getItem('username') == null ? '' : localStorage.getItem('username')
+// document.getElementById('welcome').innerHTML = localStorage.getItem('username') == null ? '' : localStorage.getItem('username')
 
-const save = () => {
-    localStorage.setItem('username', firstname.value + ' ' + lastname.value)
-    localStorage.setItem('job', job.value )
-    document.getElementById('welcome').innerHTML = localStorage.getItem('username') == null ? '' : localStorage.getItem('username')
-}
+// const save = () => {
+//     localStorage.setItem('username', firstname.value + ' ' + lastname.value)
+//     localStorage.setItem('job', job.value )
+//     document.getElementById('welcome').innerHTML = localStorage.getItem('username') == null ? '' : localStorage.getItem('username')
+// }
 
-//const logout = () => localStorage.removeItem('username')
-const logout = () => {
-    localStorage.clear()
-    sessionStorage.clear()
+// //const logout = () => localStorage.removeItem('username')
+// const logout = () => {
+//     localStorage.clear()
+//     sessionStorage.clear()
+// }
+
+// const variable = 'Este es otro texto'
+// const text = `Este es un texto de una variable: ${variable}`
+
+//console.log('Hola mundo')
+//console.log(text)
+//console.log(1)
+// const array = ['HTML', 'CSS', 'JS']
+// console.log(array)
+// const object = {name:'Hugo', job:'Developer'}
+// const array = [1,2,3,4]
+// console.log('Objeto:', object)
+// console.log('Array:', array)
+// const css = 'color: red; background: aqua'
+// const css2 = 'color: green; background: aqua'
+// // %c nos va a permitir modificar el texto
+// console.log('%cEste texto va a tener estilo y %ceste otro texto de otro estilo', css, css2)
+// const a = 5
+// const b = 4
+// console.assert(a+b==11,'No es igual a 11')
+//console.clear()
+// const array = [1,2,3,4]
+// for (let index = 0; index < array.length; index++) {
+//     console.count('tiene: ');
+    
+// }
+//console.error('Mensaje de error')
+//console.info('Mensaje de información')
+//console.warn('Mensaje de advertencia')
+// console.log('Hola mundo')
+// //console.group('Mensajes importantes agrupados')
+// console.groupCollapsed('Mensajes importantes agrupados')
+// console.log('Otro hola')
+// console.log('Otro mensaje')
+// console.warn('advertencia')
+// console.error('error')
+// console.groupEnd()
+// console.log('Afuera del grupo')
+
+// const array = ['HTML', 'CSS', 'JS']
+// console.table(array)
+
+// console.time('Duración: ')
+// for (let index = 0; index < 100000; index++) {
+//     for (let index = 0; index < 50000; index++) {                
+//     }    
+// }
+// console.timeEnd('Duración: ')
+
+const otherMethod = () => {
+    console.trace();
+} 
+const myFunction = () => {
+    otherMethod();
 }
